@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:  Sans-Serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(245, 245, 245);
+}
+header h2{
+    color: #527561;
+    text-align: center;
+    font-size: 14px;
+}
+.navegacion{
+    padding: 6px;
+    background-color: #527561;
+    text-align: center;
+}
+.navegacion a{
+    background-color: #8fa398;
+	color: #FFFFFF;
+	display: inline;
+	font: bold 12px/20px sans-serif;
+	padding: 5px 25px;
+	text-decoration: none;
+}
+.logo{
+    width: 304px; 
+    height: 124px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.titulosec{
+    font-family:  Sans-Serif;
+    font-size: 40px;
+    color: #333333;
+}
+a{
+    text-decoration: none;
+    color: #527561;
+}
+p{
+    color: #527561;
+    font-size: 14.5px;
+    font-weight:bold
+}
+ul{
+    list-style: none;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+#p1{
+    background-color: #cfddd5;
+}
+li{
+    margin: 30px 30px;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    border: 1px solid #d8e0de;
+}
+li:hover{
+    box-shadow: 0px 0px 20px 6px #abafb3;
+}
+article{
+    text-align: center;
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 7px;
+}
+#contacto{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+#f1{
+    background-color: #161818;
+}
+#f2{
+    background-color: #0A0E0D;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+#f2 p{
+    color: #FFFFFF;
+    margin-bottom: 0;
+    padding: 5px;
+}
+#tipos{
+    width: 1200px;
+    height: 1200px;
+}
+.scrollToTopBtn {
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 48px;
+    width: 48px;
+
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect */
+    transform: translateY(100px);
+    /* and a transition */
+    transition: all 0.5s ease;
+}
+.showBtn {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (max-width: 1024px) {
+    img{
+        width: 180px;
+        height: 180px;
+        border-radius: 7px;
+    }
+    p{
+        font-size: 12.5px;
+    }
+    li{
+        margin: 20px 20px;
+    }
+    ul{
+        list-style: none;
+        margin: 0px;
+        
+    }
+    #tipos{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media (max-width: 480px) {
+    #logo{
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        width: 120px;
+        height: 120px;
+        border-radius: 7px;
+    }
+    p{
+        font-size: 10.5px;
+    }
+    li{
+        margin: 50px 100px;
+    }
+    ul{
+        list-style: none;
+        margin: 0px;
+        
+    }
+    #tipos{
+        width: 80px;
+        height: 80px;
+    }
+    .navegacion a{
+        display: block;
+        margin: 2px;
+    }
+}
